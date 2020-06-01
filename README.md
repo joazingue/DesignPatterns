@@ -5,6 +5,7 @@ Design patterns followed from Refactoring Guru
 
 https://refactoring.guru/design-patterns/java
 
+
 ## Abstract Factory
 
 Abstract factory helps you to create distinct type of objects with same functionality.
@@ -40,4 +41,24 @@ builder.example.Demo.java
 4. Implements the builder for the distinct builder types, each return the respective car type
 5. Create the director, this gets a builder type and sets the components for the builder
 6. In the main module, instance a director and the type of builder, pass the builder to the director and it returns a built car
+
+
+## Factory Method
+
+Factory method creates a factory to create distinct type of objects with at least one functionality in common.
+For this example will create  buttons for HTML and Windows
+
+Factory method main module:
+```
+factoryMethod.example.Demo.java
+```
+
+1. Create the Button interface
+2. Implement the Buttons classes, each with the functionality according to it (Windows and HTML)
+3. Create the factories abstract class (Dialog in this example) this is abstract class because it implements code in one of its method.
+4. Extend factory to other factories (Windows and HTML) each creates the respective button
+5. The Demo takes the OS type and creates the respective factory, the factory creates the objects of its type
+
+
+
 
