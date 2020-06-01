@@ -60,5 +60,14 @@ factoryMethod.example.Demo.java
 5. The Demo takes the OS type and creates the respective factory, the factory creates the objects of its type
 
 
+## Prototype
 
+Creates a copy from the original object, copies all internal (including private) fields 
 
+Prototype main module:
+```
+prototype.example.Demo.java
+```
+
+1. Create the abstract class and add it a Clone method
+2. For each class that extends from main abstract class creates an instance method that gets the same object and creates a new from it and the Clone method that returns the copy
