@@ -71,3 +71,22 @@ prototype.example.Demo.java
 
 1. Create the abstract class and add it a Clone method
 2. For each class that extends from main abstract class creates an instance method that gets the same object and creates a new from it and the Clone method that returns the copy
+
+## Singleton
+
+Singleton is an object of general propouse, it's created to work with all the program, avoiding to create new instances of it.
+
+Singleton main module (naive):
+```
+singleton.example.thread_safe.Demo.java
+```
+
+Singleton main module (thread safe):
+```
+singleton.example.thread_safe.Demo.java
+```
+
+1. Create the sinlgeton class as final and private constructor
+2. Instance is created by method getInstance, wich has the private constructor and calls it only if it was not previously called
+
+
